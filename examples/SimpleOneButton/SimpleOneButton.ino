@@ -5,12 +5,12 @@
 
 #include "OneButton.h"
 
-// Setup a new OneButton on pin A1.
-OneButton button(A1, false);
+// Setup a new OneButton on pin D1.
+OneButton button(D1, false);
 
 // setup code here, to run once:
 void setup() {
-    // enable the standard led on pin 13.
+    // enable the standard led on pin D7.
     pinMode(D7, OUTPUT);      // sets the digital pin as output
 
     // link the doubleclick function to be called on a doubleclick event.

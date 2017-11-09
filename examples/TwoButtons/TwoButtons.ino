@@ -5,10 +5,10 @@
 
 #include "OneButton.h"
 
-// Setup a new OneButton on pin A1.
-OneButton button1(A1, false);
-// Setup a new OneButton on pin A2.
-OneButton button2(A2, false);
+// Setup a new OneButton on pin D1.
+OneButton button1(D1, false);
+// Setup a new OneButton on pin D2.
+OneButton button2(D2, false);
 
 // setup code here, to run once:
 void setup() {
@@ -37,8 +37,8 @@ void setup() {
 // main code here, to run repeatedly:
 void loop() {
     // keep watching the push buttons:
-    button1.tick();
-    button2.tick();
+    button1.loop();
+    button2.loop();
 }
 
 // ----- button 1 callback functions
